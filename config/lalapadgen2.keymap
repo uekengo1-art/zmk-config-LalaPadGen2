@@ -60,17 +60,27 @@
 
         COMBO_Enter {
             bindings = <&kp ENTER>;
-            key-positions = <14 13>;
+            key-positions = <13 12>;
         };
 
         COMBO_SPACE {
             bindings = <&kp SPACE>;
-            key-positions = <3 4>;
+            key-positions = <3 2>;
         };
 
         COMBO_LANG1 {
-            bindings = <&kp LANG4>;
-            key-positions = <5 6>;
+            bindings = <&kp LANG2>;
+            key-positions = <8 9>;
+        };
+
+        COMBO-Backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <16 17>;
+        };
+
+        COMBO-Jap.Lang. {
+            bindings = <&kp LANG1>;
+            key-positions = <18 19>;
         };
     };
 
