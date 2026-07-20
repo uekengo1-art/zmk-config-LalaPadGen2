@@ -57,6 +57,20 @@
             bindings = <&kp TAB>;
             key-positions = <10 11>;
         };
+
+        Enter {
+            bindings = <&kp ENTER>;
+            key-positions = <14 13>;
+        };
+    };
+
+    macros {
+        pw1: pw1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&key_repeat &kp LS(S) &kp H &kp I &kp N &kp A &kp G &kp A &kp W &kp A &kp N1 &kp N1 &kp N1>;
+            label = "PW1";
+        };
     };
 
     keymap {
@@ -69,7 +83,7 @@
 &kp A              &kp S      &kp D         &kp F      &kp G                                     &kp H      &kp J     &kp K           &kp L           &mt2 EQUAL MINUS
 &mt2 LEFT_SHIFT Z  &kp X      &kp C         &kp V      &kp B                                     &kp N      &kp M     &kp COMMA       &kp PERIOD      &kp SLASH
 &kp LCTRL          &kp LWIN   &kp LEFT_ALT  &mo 1      &kp SPACE  &kp LEFT_SHIFT  &kp BACKSPACE  &kp ENTER  &mo 2     &kp LANGUAGE_2  &kp LANGUAGE_1  &kp BACKSLASH
-                   &none      &kp RIGHT     &kp DOWN   &kp LEFT   &kp UP          &kp UP         &kp LEFT   &kp DOWN  &kp RIGHT       &none
+                   &pw1       &kp RIGHT     &kp DOWN   &kp LEFT   &kp UP          &kp UP         &kp LEFT   &kp DOWN  &kp RIGHT       &none
 &mkp LCLK          &mkp RCLK  &mkp MCLK                                                                               &mkp LCLK       &mkp RCLK       &mkp MCLK
 &mkp MB4           &mkp MB5   &kp LG(TAB)   &kp LG(D)  &kp LCTRL                                 &mkp MB4   &mkp MB5  &kp LG(TAB)     &kp LG(D)       &kp LCTRL
             >;
