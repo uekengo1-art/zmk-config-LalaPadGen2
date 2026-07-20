@@ -58,7 +58,7 @@
             key-positions = <10 11>;
         };
 
-        Enter {
+        COMBO_Enter {
             bindings = <&kp ENTER>;
             key-positions = <14 13>;
         };
