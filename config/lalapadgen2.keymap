@@ -87,6 +87,16 @@
             bindings = <&mkp MB1>;
             key-positions = <11 12>;
         };
+
+        COMBO-CopyMacro {
+            bindings = <&copy>;
+            key-positions = <21 22>;
+        };
+
+        COMBO-PasteMacro {
+            bindings = <&paste>;
+            key-positions = <22 23>;
+        };
     };
 
     macros {
@@ -102,6 +112,20 @@
             #binding-cells = <0>;
             bindings = <&key_repeat &kp LS(A) &kp M &kp A &kp Z &kp O &kp N &kp N1 &kp N1 &kp N1>;
             label = "PW2";
+        };
+
+        copy: copy {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(C)>;
+            label = "COPY";
+        };
+
+        paste: paste {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(V)>;
+            label = "PASTE";
         };
     };
 
