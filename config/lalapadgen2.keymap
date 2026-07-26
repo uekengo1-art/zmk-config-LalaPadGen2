@@ -68,9 +68,9 @@
             key-positions = <3 2>;
         };
 
-        COMBO_LANG1 {
+        COMBO_Eng.Lang. {
             bindings = <&kp LANG2>;
-            key-positions = <8 9>;
+            key-positions = <18 19>;
         };
 
         COMBO-Backspace {
@@ -80,7 +80,12 @@
 
         COMBO-Jap.Lang. {
             bindings = <&kp LANG1>;
-            key-positions = <18 19>;
+            key-positions = <18 17>;
+        };
+
+        COMBO-Click {
+            bindings = <&mkp MB1>;
+            key-positions = <11 12>;
         };
     };
 
