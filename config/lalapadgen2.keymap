@@ -47,6 +47,11 @@
 
     combos {
         compatible = "zmk,combos";
+   /* --- ここに誤爆対策プロパティを追加 --- */
+        timeout-ms = <25>;             // 判定時間を厳しく（20〜30がおすすめ）
+        require-prior-idle-ms = <150>; // タイピング中の誤爆を完全防止（100〜150がおすすめ）
+
+        // 以下、定義しているコンボ
 
         CONBO_ESC {
             bindings = <&kp ESCAPE>;
