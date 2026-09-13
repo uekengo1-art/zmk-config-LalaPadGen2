@@ -64,44 +64,9 @@
             key-positions = <10 11>;
         };
 
-        COMBO_Enter {
+        COMBO_Backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <13 12>;
-        };
-
-        COMBO_SPACE {
-            bindings = <&kp LEFT_CONTROL>;
-            key-positions = <3 2>;
-        };
-
-        COMBO_Eng.Lang. {
-            bindings = <&kp LANG2>;
-            key-positions = <18 19>;
-        };
-
-        COMBO-Backspace {
-            bindings = <&kp ENTER>;
-            key-positions = <16 17>;
-        };
-
-        COMBO-Jap.Lang. {
-            bindings = <&kp LANG1>;
-            key-positions = <18 17>;
-        };
-
-        COMBO-Click {
-            bindings = <&mkp MB1>;
-            key-positions = <11 12>;
-        };
-
-        COMBO-CopyMacro {
-            bindings = <&copy>;
-            key-positions = <21 22>;
-        };
-
-        COMBO-PasteMacro {
-            bindings = <&paste>;
-            key-positions = <22 23>;
         };
 
         COMBO-Delete {
